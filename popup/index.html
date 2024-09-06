@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21SYNERGY Early Bird Ticket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MBA fest - Early Bird Tickets</h1>
+        <p>Event Date: Undisclosed</p>
+        <p>Location: Undisclosed</p>
+
+        <div class="ticket">
+            <h2>Early Bird Admission</h2>
+            <p>Price: ₦2,000</p>
+            <p id="early-available">Available Tickets: <span>60</span></p>
+            <button id="open-modal">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <form id="purchase-form">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit" id="paystack-button">Pay with Paystack</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Paystack Script -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

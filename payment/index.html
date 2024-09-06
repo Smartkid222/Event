@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21SYNERGY Ticketing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="tickets">
+        <h2>Get Your Tickets</h2>
+    </section>
+    <div class="container">
+
+        <div class="parent">
+          <div class="card">
+            <div class="content-box">
+              <h1 class="card-title">General Admission</h1>
+              <p class="card-content">
+                ₦6,500
+              </p>
+              <button onclick="purchaseTicket('General Admission', 6900)">Buy Now</button>
+            </div>
+            <div class="date-box">
+              <span class="month">Neon</span>
+              <span class="date">3D</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="parent card3">
+          <div class="card">
+            <div class="content-box">
+              <h1 class="card-title">Early Bird</h1>
+              <p class="card-content">
+                ₦3,500
+              </p>
+              <button onclick="purchaseTicket('Early Bird', 3700)">Buy Now</button>
+            </div>
+            <div class="date-box">
+              <span class="month">Neon</span>
+              <span class="date">3D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="purchase-form" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+            <h2>Purchase Ticket</h2>
+            <form id="ticketForm">
+                <label for="ticketType">Ticket Type:</label>
+                <input type="text" id="ticketType" name="ticketType" readonly>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" readonly>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

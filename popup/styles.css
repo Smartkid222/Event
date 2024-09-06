@@ -1,0 +1,155 @@
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Close button (X) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styling (as previously defined) */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.ticket {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.ticket h2 {
+    margin-top: 0;
+}
+
+.ticket p {
+    margin: 5px 0;
+}
+
+form {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
